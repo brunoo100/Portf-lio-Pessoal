@@ -1,0 +1,53 @@
+/* Estilos da página de erro */
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+    background-color: #f4f4f4; /* Cor de fundo para indicar erro */
+    color: #721c24; /* Cor do texto de erro */
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .error-content {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .error-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .error-message {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  
+  .error-btn {
+    background-color: #f5a623;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .error-btn:hover {
+    background-color: #d4891f;
+  }
+  
+  @media (max-width: 768px) {
+    .error-content {
+      padding: 30px;
+      width: 90%;
+    }
+  }
+  

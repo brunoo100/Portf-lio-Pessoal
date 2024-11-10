@@ -1,0 +1,103 @@
+/* Estilos específicos para o componente Projetos */
+
+/* Contêiner principal */
+.projetos-container {
+  background-color: #f4f4f4; /* Cor de fundo suave */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Garante que o container ocupe 100% da largura disponível */
+  box-sizing: border-box; /* Inclui o padding na largura total */
+  margin: 5px auto;
+  text-align: center;
+}
+
+/* Título */
+.projetos-container h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Parágrafo */
+.projetos-container p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Lista de Cards de Projetos */
+.projetos-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box; /* Para garantir que não haja transbordamento */
+}
+
+/* Card de cada projeto */
+.projeto-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 30%;
+  min-width: 200px; /* Garantir que o card não fique muito pequeno em telas pequenas */
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.projeto-card:hover {
+  transform: translateY(-10px); /* Efeito de elevação ao passar o mouse */
+}
+
+/* Título e descrição do card */
+.projeto-card h2 {
+  font-size: 1.6rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.projeto-card p {
+  font-size: 1rem;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+/* Botão de acessar o projeto */
+.projeto-card button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+}
+
+.projeto-card button:hover {
+  background-color: #2980b9; /* Cor mais escura no hover */
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  .projeto-card {
+    width: 100%; /* Os cards ocupam a tela inteira em dispositivos móveis */
+    margin-bottom: 20px; /* Maior espaço entre os cards em dispositivos móveis */
+  }
+
+  .projetos-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
